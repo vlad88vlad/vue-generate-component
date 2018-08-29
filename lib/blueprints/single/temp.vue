@@ -2,7 +2,6 @@
     <div class="{{name | kebabCase}}">
         <h1>{{name | kebabCase}} Component</h1>
     </div>
-    {% endif %}
 </template>
 
 <script>
