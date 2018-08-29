@@ -1,37 +1,27 @@
-<template lang="{{filesType.html}}">
-{% if filesType.html === 'jade' || filesType.html === 'pug' %}
-  section(class="{{name | kebabCase}}")
-    h1 {{name | kebabCase}} Component
-{% else %}
-  <section class="{{name | kebabCase}}">
-    <h1>{{name | kebabCase}} Component</h1>
-  </section>
-{% endif %}
+<template>
+    <div class="{{name | kebabCase}}">
+        <h1>{{name | kebabCase}} Component</h1>
+    </div>
+    {% endif %}
 </template>
 
-<script lang="{{ filesType.script }}">
-  export default  {
-    name: '{{name | kebabCase}}',
-    props: [],
-    mounted() {
+<script>
+    export default {
+        name: '{{name | kebabCase}}',
+        props: [],
 
-    },
-    data() {
-      return {
-
-      }
-    },
-    methods: {
-
-    },
-    computed: {
+        data() {
+            return {}
+        },
+        methods: {},
+        watch: {},
+        computed: {},
+        mounted() {},
+        created() {},
 
     }
-}
 </script>
 
-<style scoped lang="{{ filesType.style }}">
-  .{{name | kebabCase}} {
+<style scoped>
 
-  }
 </style>
